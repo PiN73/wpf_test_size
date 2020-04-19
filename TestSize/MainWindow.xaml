@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestSize"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow"
+        WindowStyle="None"
+        WindowState="Maximized">
+    <Grid Name="Grid1" Background="Green">
+        <Grid Width="400" Height="400" Background="LightGreen" />
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Name="Text1" FontSize="32" TextAlignment="Center" />
+            <Control Height="32" />
+            <TextBlock Name="Text2" FontSize="32" TextAlignment="Center" />
+        </StackPanel>
     </Grid>
 </Window>
